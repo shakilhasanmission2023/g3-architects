@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&family=Work+Sans:wght@500;700&display=swap');
+:root{
+    --Dark-01:#131313;
+    --Dark-02: #424242;
+    --Dark-03:#727272;
+    
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans';
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* --------header information */
+header {
+    background: rgba(255, 144, 14, 0.1);
+}
+.nav-bar{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo .logo-name{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Dark-01);
+}
+
+.menu-bar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: var(--Dark-02);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.banner{
+    text-align: center;
+}
+.banner .banner-title{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--Dark-01);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.banner .banner-dis{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 26px;
+    color:var(--Dark-03)
+}
+.banner .banner-btn{
+    width:180px ;
+    background-color: #FF900E;
+    font-size: 1.3rem;
+    padding: 15px 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top:2%;
+    margin-bottom: 3%;
+    outline: 0;
+    border: 0;
+}
+
+.banner .banner-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.banner-img{
+  width:80%;
+  margin: 0 auto;
+  padding-bottom: 4%;;
+}
+.banner-img img{
+    width: 100%;
+}
+/* ----------team section------------ */
+.team{
+    width: 80%;
+    padding: 4%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:5%;
+}
+.team-img{
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    gap:5%;
+}
+.team-img img{
+    width: 100%;
+}
+
+.team-info .team-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:var(--Dark-01);
+    margin-bottom: 24px;
+}
+.team-title .style-1{
+    color: var(--Dark-03);
+}
+.team-title .style-2{
+    color:#FF900E;
+}
+.team .team-dis{
+    font-size: 1rem;
+    line-height: 25px;
+    color: var(--Dark-03);
+    margin-bottom: 25px;
+}
+.team-btn{
+    width:180px ;
+    background-color: #FF900E;
+    font-size: 1.3rem;
+    padding: 15px 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top:2%;
+    margin-bottom: 3%;
+    outline: 0;
+    border: 0;
+}
+
+.team-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+/* ---------architent--------- */
+.architect{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding-top: 3% ;
+    gap:8%;
+   
+}
+
+.about .about-title{
+    font-size: 2rem;
+    padding:1% 2%;
+    border-left: 3px solid #FF900E;
+    color: var(--Dark-02);
+    margin-top: 5%;
+}
+.about .about-dis{
+    font-size: 1rem;
+    color: var(--Dark-03);
+    margin: 4% 0;
+}
+
+
+.architect-service .service{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 4%;
+    
+}
+.service-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+.service-dis{
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--Dark-03);
+}
+
+.architect-img img{
+    width: 100%;
+}
+
+
+.btn-2{
+    width:200px ;
+    background-color: #FF900E;
+    padding: 15px 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    bottom: 0px;
+    position: relative;
+    transition-duration: 1s;
+}
+.btn-2:hover{
+    bottom: 80px;
+}
+
+
+.architect-btn h2{
+    font-size:35px;
+    color: #fff;
+    text-align: center;
+   
+}
+
+.architect-btn p{
+    text-align:center;
+}
+.architect-btn p a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+
+}
+/* review */
+.review{
+    width: 80%;
+    padding: 3% 0;
+    margin: 0 auto;
+}
+.review-title{
+    font-size: 2rem;
+    color: var(--Dark-01);
+}
+.review-dis{
+    font-size: 1rem;
+    color: var(--Dark-03);
+    line-height: 25px;
+    margin: 2% 0;
+}
+.review-work{
+    display: flex;
+    justify-content: space-evenly;
+}
+.review-work .project{
+    width: 17%;
+    text-align: center;
+    border: 1px solid #FF900E;
+    padding: 25px 0px;
+    border-radius: 5px;
+    position: relative;
+   
+}
+.review-work .project:hover{
+    bottom: 50px;
+    background-color: #FF900E;
+    border: 1px solid var(--Dark-03);
+    transition-duration:1.5s;
+}
+.review-work .project:hover .count{
+    color: #fff;
+}
+.review-work .project:hover .project-dis{
+    color: #fff;
+}
+.project .count{
+    font-size: 2.5rem;
+    color: var(--Dark-02);
+    margin: 10px 0;
+}
+.project .project-dis{
+    font-size: 1rem;
+    color: var(--Dark-03);
+}
+
+/* ---------our sponspors----------- */
+.sponspors{
+    width: 80%;
+    padding: 3% 0;
+    margin: 0 auto;
+}
+
+ .sponspor-about .sponspor-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Dark-01);
+    text-align: center;
+    margin-top: 3%;
+}
+
+.sponspor-about .sponspor-dis{
+    font-size: 1rem;
+    color: var(--Dark-03);
+    line-height: 25px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.sponspor-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.sponspor-logo img{
+    width: 12%;
+}
+
+/* web desing */
+.iteam img{
+    width: 50px;
+    height: 50px;
+}
+.web-desing{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3% 0;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/web-desing.jpg");
+}
+.desing-title{
+    color: #fff;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 3%;
+}
+.desing-dis{
+    font-size: 1rem;
+    line-height: 25px;
+    text-align: center;
+    color:#fff;
+    margin-top: 3%;;
+}
+
+.desing-iteams{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iteam{
+    background: #fff;
+    text-align: center;
+    padding: 4%;
+    width: 20%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.iteam h2{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.desing-btn{
+    width: 130px;
+    background-color: #FF900E;
+    padding: 15px 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    bottom: 0px;
+    margin-top: 3%;
+
+}
+.desing-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* footer */
+footer{
+    width: 80%;
+    margin:0 auto;
+    background-color: #FFF4E7;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 1.5%;
+    margin-top: 3%;
+    margin-bottom:5%;
+}
+footer p{
+    color:var(--Dark-03);
+}
+
+/* media requry */
+@media screen and (max-width:576px){
+    /* nav-bar */
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    /* banner-section */
+    .menu-bar ul{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+    
+    }
+    .banner .banner-title{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .banner .banner-dis{
+        font-size: 0.9rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .banner .banner-btn{
+        font-size: 1rem;
+    }
+    /* team */
+    .team{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .team-img{
+        display: grid;
+        grid-template-columns:1fr;
+        gap:2%
+    }
+    .team-info .team-title{
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    .team-info .team-dis{
+        font-size: 0.9rem;
+    }
+    .team-info .team-btn{
+        font-size: 1rem;
+        margin-bottom:80px;
+    }
+    /* architent */
+    .architect{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:3%;
+    }
+    .about .about-title{
+        font-size: 2rem;
+    }
+    .about .about-dis{
+        font-size: .9rem;
+        line-height: 25px;
+    }
+    .service .service-dis{
+        font-size: .9rem;
+    }
+    .architect-img{
+        width: 100%;
+    }
+    .btn-2:hover{
+        bottom:0;
+    }
+    .btn-2{
+        margin-top: 15%;
+        margin-bottom: 5%;
+        transition-duration: 0s;
+    }
+    /* review */
+    .review .review-dis{
+        font: size 0.9rem;
+        margin-bottom: 30px;
+        
+    }
+    .review-work{
+      display: flex;
+      flex-direction: column;
+    }
+    .review-work .project{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    .review-work .project:hover{
+        bottom: 0;
+    }
+    /* sponspor */
+    .sponspor-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .sponspor-logo img{
+        width: 50%;
+        margin-bottom: 20%;
+    }
+    /* web desing */
+    .desing-iteams{
+        display: flex;
+        flex-direction: column;
+    }
+    .desing-title{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .iteam{
+        width: 70%;
+        margin:0 auto;
+        margin-bottom: 5%;
+    }
+    .iteam h2{
+        padding-bottom: 30px ;
+    }
+    .desing-dis{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 0.9rem;
+        margin-top: 3%;
+    }
+    .iteam img{
+    }
+/* footer */
+footer p{
+    font-size: .9rem;
+}
+}
+/* end */
